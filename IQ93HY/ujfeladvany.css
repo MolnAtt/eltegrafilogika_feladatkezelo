@@ -1,0 +1,44 @@
+#ujfeladvany-grid-container{
+    display:grid;
+    grid-template-areas: 10ex 2ex;
+    grid-template-areas: 
+    "szellabel szelesseg"
+    "maglabel magassag"
+    "visszajelzes kuldes";
+    justify-items: start;
+    gap:5px;
+}
+
+#ujfeladvany-grid-container label{
+    justify-self: end;
+}
+
+#ujfeladvany-grid-container input{
+    width:8ex;
+}
+
+
+#szellabel, #maglabel{
+    color:white;
+}
+
+.ujfeladvanygomb{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display:grid;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.ujfeladvanygomb button{
+    color:black;
+    text-decoration: none;
+}
+
+
+form{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 70%;
+    gap:10px;
+}

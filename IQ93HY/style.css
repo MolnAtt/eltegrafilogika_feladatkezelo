@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "header log " 
+    "main .";
+}
+
+header{
+    grid-area:header;
+}
+
+header h1{
+    text-align: center;
+    color:white;
+}
+
+.log{
+    grid-area:log;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 20px;
+    gap:5px;
+    justify-items: end;
+}
+
+
+
+.log *{
+    color:white;
+}
+.log a{
+    grid-column-start:1;
+    grid-column-end:3;
+    justify-self: center;
+}
+
+.bejnev{
+    justify-self: start;
+}
+
+main{
+    grid-area: main;
+}
+
+
+
+
+
+
+
+
